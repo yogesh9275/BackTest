@@ -1,0 +1,162 @@
+/* Give a modern UI for every tag */
+
+body {
+  background: url('mountain.jpg') no-repeat center center fixed;
+  font-family: "Lato-Light", sans-serif;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Transparent box */
+.transparent-box {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  align-self: center;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Labels */
+label {
+  font-weight: 500;
+}
+
+
+/* Selects */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  font-size: 16px;
+  padding: 10px 20px;
+  width: 200px;
+  box-shadow: none;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+select:focus {
+  background-color: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+/* Inputs */
+input {
+  border: none;
+  border-bottom: 2px solid #0077FF;
+  outline: none; 
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+  border-bottom: 2px solid #0099FF;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Buttons */
+button {
+  padding: 0.8rem 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  background-color: #007bff;
+  color: #fff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Set white background for the entire table */
+.my-table {
+  background-color: #fff;
+  border: 1px solid #000;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 70%;
+  font-family: "Lato-Light", sans-serif;
+}
+
+/* Set white background and black text for remaining rows */
+.my-table tr:not(:first-child) {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Set black background and white text for column headings */
+.my-table th {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Set border for table cells */
+.my-table td,
+.my-table th {
+  border: 1px solid #000;
+  padding: 10px;
+}
+/* Set white background for the entire table */
+.table-data {
+  background-color: #fff;
+  border: 1px solid #000;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 90%;
+  font-family: "Lato-Light", sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Set white background and black text for remaining rows */
+.table-data tr:not(:first-child) {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Set black background and white text for column headings */
+.table-data th {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Set border for table cells */
+.table-data td,
+.table-data th {
+  border: 1px solid #000;
+  padding: 10px;
+}

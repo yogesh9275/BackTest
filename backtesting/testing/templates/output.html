@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Output</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style_2.css' %}">
+  </head>
+  <body>
+    <div class="transparent-box">
+      <table class="table-data">
+        <tr>
+          <th><label>Stock Name:</label></th>
+          <td>{{ stock_name }}</td>
+        </tr>
+        <tr>
+          <th><label>Start Date:</label></th>
+          <td>{{ start_date }}</td>
+        </tr>
+        <tr>
+          <th><label>End Date:</label></th>
+          <td>{{ end_date }}</td>
+        </tr>
+        <tr>
+          <th><label>Indicator 1:</label></th>
+          <td>{{ indicator1 }}</td>
+        </tr>
+        <tr>
+          <th><label>Indicator 2:</label></th>
+          <td>{{ indicator2 }}</td>
+        </tr>
+        <tr>
+          <th><label>Indicator 3:</label></th>
+          <td>{{ indicator3 }}</td>
+        </tr>
+        <tr>
+          <th><label>Indicator 4:</label></th>
+          <td>{{ indicator4 }}</td>
+        </tr>
+        <tr>
+          <th><label>Stop Loss Percentage:</label></th>
+          <td>{{ stoploss }}</td>
+        </tr>
+        <tr>
+          <th><label>Target Percentage:</label></th>
+          <td>{{ target }}</td>
+        </tr>
+        <tr>
+          <th><label>Total Amount:</label></th>
+          <td>{{ total_amount }}</td>
+        </tr>
+        <tr>
+          <th><label>Share Quantity:</label></th>
+          <td>{{ share_quantity }}</td>
+        </tr>
+      </table>
+      <table class = "my-table">
+        {{ data|safe }}
+    </table>    
+    </div>
+  </body>
+</html>

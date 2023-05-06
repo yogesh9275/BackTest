@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Output</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style_output.css' %}">
+  </head>
+<body>
+  <div class="transparent-box">
+      <p><label>Error:</label></p>
+      <p><label>An error occurred during backtesting:</label></p>
+      <p>{{ error }}</p>
+    </div>
+  </body>
+</html>

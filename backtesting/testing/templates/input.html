@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Page</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+  </head>
+  <body>
+    <div class="transparent-box">
+      <form method="POST">
+          {% csrf_token %}
+          <label for="stock_name">Stock Name:</label>
+          <input type="text" name="stock_name" id="stock_name" required><br><br>
+          <label for="start_date">Start Date:</label>
+          <input type="date" name="start_date" id="start_date" required>
+          <label for="end_date">End Date:</label>
+          <input type="date" name="end_date" id="end_date" required><br><br>
+          <label for="indicator1">Buy Indicator 1:</label>
+          <select name="indicator1" id="indicator1">
+            <option value="SMA">SMA - Simple Moving Average</option>
+            <option value="EMA">EMA - Exponential Moving Average</option>
+            <option value="RSI">RSI - Relative Strength Index</option>
+            <option value="MACD">MACD - Moving Average Convergence Divergence</option>
+            <option value="ADX">ADX - Average Directional Index</option>
+            <option value="ATR">ATR - Average True Range</option>
+            <option value="BBANDS_U">BBANDS - Bollinger Bands Upper</option>
+            <option value="BBANDS_M">BBANDS - Bollinger Bands Middle</option>
+            <option value="BBANDS_L">BBANDS - Bollinger Bands Lower</option>
+            <option value = "CCI">CCI - Commodity Channel Index</option>
+            <option value="Chaikin_AD">Chaikin_AD - Chaikin Accumulation Distribution</option>
+            <option value="DMI">DMI - Directional Movement Index</option>
+            <option value="OBV">OBV - On Balance Volume</option>
+            <option value="ROC">ROC - Rate of Change</option>
+            <option value="SAR">SAR - Stop and Reverse</option>
+            <option value="STDDEV">STDDEV - Standard Deviation</option>
+            <option value="TRIX">TRIX - Triple Exponential Moving Average</option>
+            <option value="WILLR">WILLR - Williams %R</option>
+            <option value="HIGH">High</option>
+            <option value="OPEN">Open</option>
+            <option value="CLOSE">Close</option>
+            <option value="LOW">Low</option>
+            <!-- Add more indicator options here -->
+          </select><br><br>
+          <label for="indicator2">Buy Indicator 2:</label>
+          <select name="indicator2" id="indicator2">
+            <option value="SMA">SMA - Simple Moving Average</option>
+            <option value="EMA">EMA - Exponential Moving Average</option>
+            <option value="RSI">RSI - Relative Strength Index</option>
+            <option value="MACD">MACD - Moving Average Convergence Divergence</option>
+            <option value="ADX">ADX - Average Directional Index</option>
+            <option value="ATR">ATR - Average True Range</option>
+            <option value="BBANDS_U">BBANDS - Bollinger Bands Upper</option>
+            <option value="BBANDS_M">BBANDS - Bollinger Bands Middle</option>
+            <option value="BBANDS_L">BBANDS - Bollinger Bands Lower</option>
+            <option value = "CCI">CCI - Commodity Channel Index</option>
+            <option value="Chaikin_AD">Chaikin_AD - Chaikin Accumulation Distribution</option>
+            <option value="DMI">DMI - Directional Movement Index</option>
+            <option value="OBV">OBV - On Balance Volume</option>
+            <option value="ROC">ROC - Rate of Change</option>
+            <option value="SAR">SAR - Stop and Reverse</option>
+            <option value="STDDEV">STDDEV - Standard Deviation</option>
+            <option value="TRIX">TRIX - Triple Exponential Moving Average</option>
+            <option value="WILLR">WILLR - Williams %R</option>
+            <option value="HIGH">High</option>
+            <option value="OPEN">Open</option>
+            <option value="CLOSE">Close</option>
+            <option value="LOW">Low</option>
+            <!-- Add more indicator options here -->
+          </select><br><br>
+          <label for="indicator3">Sell Indicator 3:</label>
+          <select name="indicator3" id="indicator3">
+            <option value="SMA">SMA - Simple Moving Average</option>
+            <option value="EMA">EMA - Exponential Moving Average</option>
+              <option value="RSI">RSI - Relative Strength Index</option>
+              <option value="MACD">MACD - Moving Average Convergence Divergence</option>
+              <option value="ADX">ADX - Average Directional Index</option>
+              <option value="ATR">ATR - Average True Range</option>
+              <option value="BBANDS_U">BBANDS - Bollinger Bands Upper</option>
+              <option value="BBANDS_M">BBANDS - Bollinger Bands Middle</option>
+              <option value="BBANDS_L">BBANDS - Bollinger Bands Lower</option>
+              <option value = "CCI">CCI - Commodity Channel Index</option>
+              <option value="Chaikin_AD">Chaikin_AD - Chaikin Accumulation Distribution</option>
+              <option value="DMI">DMI - Directional Movement Index</option>
+              <option value="OBV">OBV - On Balance Volume</option>
+              <option value="ROC">ROC - Rate of Change</option>
+              <option value="SAR">SAR - Stop and Reverse</option>
+              <option value="STDDEV">STDDEV - Standard Deviation</option>
+              <option value="TRIX">TRIX - Triple Exponential Moving Average</option>
+              <option value="HIGH">High</option>
+            <option value="OPEN">Open</option>
+            <option value="CLOSE">Close</option>
+            <option value="LOW">Low</option>
+              <option value="WILLR">WILLR - Williams %R</option>
+                <!-- Add more indicator options here -->
+          </select><br><br>
+          <label for="indicator4">Sell Indicator 4:</label>
+          <select name="indicator4" id="indicator4">
+            <option value="SMA">SMA - Simple Moving Average</option>
+              <option value="EMA">EMA - Exponential Moving Average</option>
+              <option value="RSI">RSI - Relative Strength Index</option>
+              <option value="MACD">MACD - Moving Average Convergence Divergence</option>
+              <option value="ADX">ADX - Average Directional Index</option>
+              <option value="ATR">ATR - Average True Range</option>
+              <option value="BBANDS_U">BBANDS - Bollinger Bands Upper</option>
+              <option value="BBANDS_M">BBANDS - Bollinger Bands Middle</option>
+              <option value="BBANDS_L">BBANDS - Bollinger Bands Lower</option>
+              <option value = "CCI">CCI - Commodity Channel Index</option>
+              <option value="Chaikin_AD">Chaikin_AD - Chaikin Accumulation Distribution</option>
+              <option value="DMI">DMI - Directional Movement Index</option>
+              <option value="OBV">OBV - On Balance Volume</option>
+              <option value="ROC">ROC - Rate of Change</option>
+              <option value="SAR">SAR - Stop and Reverse</option>
+              <option value="STDDEV">STDDEV - Standard Deviation</option>
+              <option value="TRIX">TRIX - Triple Exponential Moving Average</option>
+              <option value="WILLR">WILLR - Williams %R</option>
+              <option value="HIGH">High</option>
+            <option value="OPEN">Open</option>
+            <option value="CLOSE">Close</option>
+            <option value="LOW">Low</option>
+              <!-- Add more indicator options here -->
+          </select><br><br>
+          <label for="buy_condition">Buy Condition:</label>
+            <select name="buy_condition" id="buy_condition">
+              <option value="crossover">Cross Over</option>
+              <option value="greaterthan">Greater than</option>
+            </select><br><br>
+          <label for="sell_condition">Sell Condition:</label>
+            <select name="sell_condition" id="sell_condition">
+              <option value="crossdown">Cross Down</option>
+              <option value="lessthan">Less than</option>
+            </select><br><br>
+        <label for="stoploss">Stop Loss Percentage:</label>
+          <input type="text" name="stoploss" id="stoploss" required><br><br>
+        <label for="target">Target Percentage:</label>
+          <input type="text" name="target" id="target" required><br><br>
+        <label for="total_amount">Total Amount:</label>
+          <input type="text" name="total_amount" id="total_amount" required><br><br>
+        <label for="share_quantity">Share Quantity:</label>
+          <input type="text" name="share_quantity" id="share_quantity" required><br><br>
+          <button type="submit">Submit</button>
+        </form>
+  </div>
+  </body>
+</html>
